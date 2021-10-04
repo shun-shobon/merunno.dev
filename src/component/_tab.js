@@ -9,12 +9,14 @@ export default function _tab() {
       <Tabs variant="soft-rounded" colorScheme="green">
         <TabList>
           <Tab>自己紹介</Tab>
+          <Tab>お知らせ</Tab>
           <Tab>リンク・その他</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
             <About />
           </TabPanel>
+          <TabPanel>現在はありません。</TabPanel>
           <TabPanel>
             <Link />
           </TabPanel>
