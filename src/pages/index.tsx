@@ -2,12 +2,18 @@ import { Box, Heading, Center } from '@chakra-ui/react'
 import IndexCss from '../../styles/index.module.css'
 import React from 'react'
 import Image from 'next/image'
+import Head from 'next/head'
 
 import Content_tab from '../component/_tab'
 
 export default function Home() {
   return (
     <Box>
+      <Head>
+        <title>merunno.dev</title>
+        <meta charSet="utf-8" />
+        <meta content="merunnoのポートフォリオです。" name="description" />
+      </Head>
       <div className={IndexCss.Bodys}>
         <div className={IndexCss.BodyIcon}>
           <Image
