@@ -1,6 +1,7 @@
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@chakra-ui/react'
 
 import About from './pages/about'
+import Link from './pages/link-other'
 
 export default function _tab() {
   return (
@@ -8,7 +9,6 @@ export default function _tab() {
       <Tabs variant="soft-rounded" colorScheme="green">
         <TabList>
           <Tab>自己紹介</Tab>
-          <Tab>プロジェクト</Tab>
           <Tab>リンク・その他</Tab>
         </TabList>
         <TabPanels>
@@ -16,7 +16,7 @@ export default function _tab() {
             <About />
           </TabPanel>
           <TabPanel>
-            <p>two!</p>
+            <Link />
           </TabPanel>
         </TabPanels>
       </Tabs>
