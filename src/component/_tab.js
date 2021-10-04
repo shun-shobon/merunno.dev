@@ -1,5 +1,7 @@
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@chakra-ui/react'
 
+import About from './pages/about'
+
 export default function _tab() {
   return (
     <main>
@@ -11,7 +13,7 @@ export default function _tab() {
         </TabList>
         <TabPanels>
           <TabPanel>
-            <p>one!</p>
+            <About />
           </TabPanel>
           <TabPanel>
             <p>two!</p>
