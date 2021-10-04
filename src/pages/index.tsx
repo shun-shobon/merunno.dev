@@ -1,7 +1,9 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Heading, Center } from '@chakra-ui/react'
 import IndexCss from '../../styles/index.module.css'
 import React from 'react'
 import Image from 'next/image'
+
+import Content_tab from '../component/_tab'
 
 export default function Home() {
   return (
@@ -14,6 +16,12 @@ export default function Home() {
             width={100}
             height={100}
           />
+        </div>
+        <Heading>Hello!</Heading>
+        <div className={IndexCss.contentBodys}>
+          <Center h="100%">
+            <Content_tab />
+          </Center>
         </div>
       </div>
     </Box>
