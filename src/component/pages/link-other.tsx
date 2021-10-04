@@ -5,6 +5,16 @@ export default function linkOther() {
   return (
     <main>
       <div className={CSS.Bodys}>
+        <div className={LoCss.cotent}>ソースコード等</div>
+        <div className={LoCss.link}>
+          <a
+            href="https://github.com/merunno/merunno.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <u>リポジトリ</u>
+          </a>
+        </div>
         <div className={LoCss.cotent}>リンク集</div>
         <div className={LoCss.link}>
           <a
@@ -37,7 +47,7 @@ export default function linkOther() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <u>Apache-2.0 のライセンス</u> の元 公開を行っています。
+            <u>Apache License 2.0のもと</u>公開を行っています。
           </a>
           <p>© merunno 2021</p>
         </div>
