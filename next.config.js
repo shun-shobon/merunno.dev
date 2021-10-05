@@ -4,6 +4,6 @@ module.exports = {
     dirs: ['src/components/', 'src/lib/', 'src/pages/'],
   },
   images: {
-    domains: ['twitter.com', 'pbs.twimg.com'],
+    domains: ['github.com'],
   },
 }

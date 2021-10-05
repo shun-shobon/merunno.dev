@@ -17,7 +17,7 @@ export default function Home() {
       <div className={IndexCss.Bodys}>
         <div className={IndexCss.BodyIcon}>
           <Image
-            src="https://pbs.twimg.com/profile_images/1443618769952149505/c5usFwMx_400x400.jpg"
+            src="https://github.com/merunno.png"
             alt={'merunno 冬のアイコン'}
             width={100}
             height={100}
