@@ -5,6 +5,12 @@ export default function linkOther() {
   return (
     <main>
       <div className={CSS.Bodys}>
+        <div className={LoCss.cotent}>連絡</div>
+        <div className={LoCss.link}>
+          <p>連絡はこちらまでよろしくお願いします。</p>
+          <p>(Discord DMなどはフレンド以外切ってます。ご了承おねがいでしゅ.)</p>
+          <u>me@merunno.dev</u>
+        </div>
         <div className={LoCss.cotent}>ソースコード等</div>
         <div className={LoCss.link}>
           <a
