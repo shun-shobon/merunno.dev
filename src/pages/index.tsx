@@ -34,7 +34,7 @@ export default function Home() {
         <p>16 * 2005/09/02</p>
       </div>
       <div className={IndexCss.Title}>
-        <div className={IndexCss.Title}>勉強中の言語</div>
+        <div className={IndexCss.content}>勉強中の言語</div>
         <p>TypeScript / Java</p>
       </div>
       <div className={IndexCss.Title}>
