@@ -6,6 +6,18 @@
     margin-top: 50px;
 }
 
-.contentBodys {
-    margin-top: 55px;
+.Title {
+    text-align: center;
+    margin: auto;
+    align-items: flex-end;
+}
+
+.content {
+    color: darkseagreen;
+    margin-top: 50px;
+}
+
+.link {
+    align-items: flex-end;
+    margin-bottom: 50px;
 }
