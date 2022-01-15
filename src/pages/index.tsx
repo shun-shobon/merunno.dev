@@ -1,8 +1,8 @@
-import { Box, Heading } from '@chakra-ui/react'
-import IndexCss from '../styles/index.module.css'
+import { Box } from '@chakra-ui/react'
 import React from 'react'
-import Image from 'next/image'
 import Head from 'next/head'
+
+import Introduction from '../component/introduction.component'
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         <meta property={'og:title'} content={'merunno のポートフォリオ'} />
         <meta property={'og:description'} content={'merunnoが作ったポートフォリオです。'} />
       </Head>
-
+        <Introduction/>
     </Box>
   )
 }
