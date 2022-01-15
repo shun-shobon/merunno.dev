@@ -3,6 +3,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Introduction from '../component/introduction.component'
+import SelfDescription from '../component/self_description.component'
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
         <meta property={'og:title'} content={'merunno のポートフォリオ'} />
         <meta property={'og:description'} content={'merunnoが作ったポートフォリオです。'} />
       </Head>
-        <Introduction/>
+        <Introduction/> {/* アイコン */}
+        <SelfDescription /> {/* タイトル */}
     </Box>
   )
 }
