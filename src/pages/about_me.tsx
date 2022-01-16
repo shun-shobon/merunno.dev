@@ -1,13 +1,25 @@
 import React from 'react'
-import { Center, Circle, Text } from '@chakra-ui/react'
+import { Box, Center, Circle, Text } from '@chakra-ui/react'
 
 import AboutMeCSS from '../styles/about_me.module.css'
 import introductionCSS from '../styles/introduction.module.css'
 import { BackButton } from '../component/backButton.component'
+import Head from 'next/head'
 
 export default function About() {
   return (
-    <main>
+    <Box>
+      <Head>
+        <title>merunno.dev / 自己紹介</title>
+        <meta charSet='utf-8' />
+        <meta content='merunnoのポートフォリオ * 自己紹介' name='description' />
+
+        {/* OGPタグ */}
+        <meta property={'og:url'} content={'https://www.merunno.dev/'} />
+        <meta property={'og:title'} content={'merunno のポートフォリオ'} />
+        <meta property={'og:description'} content={'merunnoが作ったポートフォリオです。'} />
+      </Head>
+
       <div className={'title'}>
         <Circle w='100%' h='100px'>
           <Text
@@ -48,6 +60,6 @@ export default function About() {
       <Center h={'200px'}>
         <BackButton />
       </Center>
-    </main>
+    </Box>
   )
 }

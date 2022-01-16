@@ -1,13 +1,25 @@
-import { Button, Circle, HStack, Text } from '@chakra-ui/react'
+import { Box, Button, Circle, HStack, Text } from '@chakra-ui/react'
 import React from 'react'
 
 import introductionCSS from '../styles/introduction.module.css'
 import AboutMeCSS from '../styles/about_me.module.css'
 import { BackButton } from '../component/backButton.component'
+import { Head } from 'next/document'
 
 export default function Contects() {
   return (
-    <main>
+    <Box>
+      <Head>
+        <title>merunno.dev / 連絡(リンク)</title>
+        <meta charSet='utf-8' />
+        <meta content='merunnoのポートフォリオ * 連絡(リンク)' name='description' />
+
+        {/* OGPタグ */}
+        <meta property={'og:url'} content={'https://www.merunno.dev/'} />
+        <meta property={'og:title'} content={'merunno のポートフォリオ'} />
+        <meta property={'og:description'} content={'merunnoが作ったポートフォリオです。'} />
+      </Head>
+
       <div>
         <div className={'title'}>
           <Circle w='100%' h='100px'>
@@ -73,6 +85,6 @@ export default function Contects() {
           </Circle>
         </div>
       </div>
-    </main>
+    </Box>
   )
 }
