@@ -1,0 +1,10 @@
+.Title {
+    text-align: center;
+    margin: auto;
+    align-items: flex-end;
+}
+
+.content {
+    color: darkseagreen;
+    margin-top: 50px;
+}
