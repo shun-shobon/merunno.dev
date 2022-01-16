@@ -1,9 +1,9 @@
-import { Button, Circle, HStack, Link, Text } from '@chakra-ui/react'
+import { Button, Circle, HStack, Text } from '@chakra-ui/react'
 import React from 'react'
 
 import introductionCSS from '../styles/introduction.module.css'
 import AboutMeCSS from '../styles/about_me.module.css'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { BackButton } from '../component/backButton.component'
 
 export default function Contects() {
   return (
@@ -64,6 +64,12 @@ export default function Contects() {
                 <p>me@merunno.dev</p>
               </div>
             </div>
+          </Circle>
+        </div>
+
+        <div className={'back'}>
+          <Circle w={'100%'} h={'200px'}>
+            <BackButton />
           </Circle>
         </div>
       </div>
