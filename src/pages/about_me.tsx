@@ -23,7 +23,7 @@ export default function About() {
       <div className={'title'}>
         <Circle w='100%' h='100px'>
           <Text
-            bgGradient='linear(to-l, #FF504A, #FF504A)'
+            bgGradient='linear(to-l, #FFBAFC, #A3D7FF)'
             bgClip='text'
             fontSize='3xl'
             fontWeight='extrabold'
