@@ -4,6 +4,7 @@ import Head from 'next/head'
 
 import Introduction from '../component/introduction.component'
 import SelfDescription from '../component/self_description.component'
+import PageButton from '../component/button.component'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
         <Introduction/> {/* アイコン */}
         <SelfDescription /> {/* タイトル */}
+        <PageButton /> {/* ボタン */}
     </Box>
   )
 }
