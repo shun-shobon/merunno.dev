@@ -1,10 +1,10 @@
 import { Box, Button, Circle, HStack, Text } from '@chakra-ui/react'
 import React from 'react'
+import Head from 'next/head'
 
 import introductionCSS from '../styles/introduction.module.css'
 import AboutMeCSS from '../styles/about_me.module.css'
 import { BackButton } from '../component/backButton.component'
-import { Head } from 'next/document'
 
 export default function Contects() {
   return (
@@ -24,7 +24,7 @@ export default function Contects() {
         <div className={'title'}>
           <Circle w='100%' h='100px'>
             <Text
-              bgGradient='linear(to-l, #FF7479, #B3FFFF)'
+              bgGradient='linear(to-l, #FF504A, #FF504A)'
               bgClip='text'
               fontSize='3xl'
               fontWeight='extrabold'
