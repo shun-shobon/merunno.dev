@@ -18,7 +18,7 @@ export default function ButtonC() {
             </Link>
           </Button>
           <Button colorScheme='teal' variant='ghost'>
-            <Link href='/contacts'>
+            <Link href='/contects'>
               Contacts
             </Link>
           </Button>
