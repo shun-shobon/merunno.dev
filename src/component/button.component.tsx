@@ -1,19 +1,19 @@
-import { Button, Circle } from '@chakra-ui/react'
-import React from 'react'
-import Link from 'next/link'
+import { Button, Circle } from '@chakra-ui/react';
+import React from 'react';
+import Link from 'next/link';
 
 export default function ButtonC() {
   return (
     <main>
       <div>
-        <Circle w='100%' h='50px'>
-          <Link href='/about_me'>
-            <Button colorScheme='teal' variant='ghost'>
+        <Circle w="100%" h="50px">
+          <Link href="/about_me">
+            <Button colorScheme="teal" variant="ghost">
               About me
             </Button>
           </Link>
-          <Link href='/contacts'>
-            <Button colorScheme='teal' variant='ghost'>
+          <Link href="/contacts">
+            <Button colorScheme="teal" variant="ghost">
               Contacts
             </Button>
           </Link>
@@ -23,12 +23,12 @@ export default function ButtonC() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button colorScheme='teal' variant='ghost' >
+            <Button colorScheme="teal" variant="ghost">
               Projects
             </Button>
           </a>
         </Circle>
       </div>
     </main>
-  )
+  );
 }

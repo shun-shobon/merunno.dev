@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import {
   Button,
   Popover,
   PopoverArrow,
   PopoverBody,
   PopoverCloseButton,
-  PopoverContent, PopoverHeader,
+  PopoverContent,
+  PopoverHeader,
   PopoverTrigger
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 
 export default function Github_linkComponent() {
   return (
@@ -25,12 +26,12 @@ export default function Github_linkComponent() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button colorScheme='teal' variant='ghost' >
+            <Button colorScheme="teal" variant="ghost">
               <u>リポジトリ</u>
             </Button>
           </a>
         </PopoverBody>
       </PopoverContent>
     </Popover>
-  )
+  );
 }

@@ -1,32 +1,35 @@
-import React from 'react'
-import { Box, Center, Circle, Text } from '@chakra-ui/react'
+import React from 'react';
+import { Box, Center, Circle, Text } from '@chakra-ui/react';
 
-import AboutMeCSS from '../styles/about_me.module.css'
-import introductionCSS from '../styles/introduction.module.css'
-import { BackButton } from '../component/backButton.component'
-import Head from 'next/head'
+import AboutMeCSS from '../styles/about_me.module.css';
+import introductionCSS from '../styles/introduction.module.css';
+import { BackButton } from '../component/backButton.component';
+import Head from 'next/head';
 
 export default function About() {
   return (
     <Box>
       <Head>
         <title>merunno.dev / 自己紹介</title>
-        <meta charSet='utf-8' />
-        <meta content='merunnoのポートフォリオ * 自己紹介' name='description' />
+        <meta charSet="utf-8" />
+        <meta content="merunnoのポートフォリオ * 自己紹介" name="description" />
 
         {/* OGPタグ */}
         <meta property={'og:url'} content={'https://www.merunno.dev/'} />
         <meta property={'og:title'} content={'merunno のポートフォリオ'} />
-        <meta property={'og:description'} content={'merunnoが作ったポートフォリオです。'} />
+        <meta
+          property={'og:description'}
+          content={'merunnoが作ったポートフォリオです。'}
+        />
       </Head>
 
       <div className={'title'}>
-        <Circle w='100%' h='100px'>
+        <Circle w="100%" h="100px">
           <Text
-            bgGradient='linear(to-l, #FFBAFC, #A3D7FF)'
-            bgClip='text'
-            fontSize='3xl'
-            fontWeight='extrabold'
+            bgGradient="linear(to-l, #FFBAFC, #A3D7FF)"
+            bgClip="text"
+            fontSize="3xl"
+            fontWeight="extrabold"
           >
             自己紹介
           </Text>
@@ -61,5 +64,5 @@ export default function About() {
         <BackButton />
       </Center>
     </Box>
-  )
+  );
 }

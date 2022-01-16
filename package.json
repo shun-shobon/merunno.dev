@@ -10,8 +10,8 @@
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write",
-    "eslint": "eslint --ignore-path .gitignore \"src/**/*.{js,ts}\"",
-    "eslint:fix": "eslint --ignore-path .gitignore \"src/**/*.{js,ts}\" --fix",
+    "eslint": "eslint --ignore-path .gitignore \"src/**/*.{js,ts,tsx}\"",
+    "eslint:fix": "eslint --ignore-path .gitignore \"src/**/*.{js,ts,tsx}\" --fix",
     "fix": "yarn run format && npm run lint -- --fix",
     "prepare": "husky install",
     "lint-staged": "lint-staged"

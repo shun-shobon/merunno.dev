@@ -1,33 +1,39 @@
-import { Box, Button, Circle, HStack, Text } from '@chakra-ui/react'
-import React from 'react'
-import Head from 'next/head'
+import { Box, Button, Circle, HStack, Text } from '@chakra-ui/react';
+import React from 'react';
+import Head from 'next/head';
 
-import introductionCSS from '../styles/introduction.module.css'
-import AboutMeCSS from '../styles/about_me.module.css'
-import { BackButton } from '../component/backButton.component'
+import introductionCSS from '../styles/introduction.module.css';
+import AboutMeCSS from '../styles/about_me.module.css';
+import { BackButton } from '../component/backButton.component';
 
 export default function Contacts() {
   return (
     <Box>
       <Head>
         <title>merunno.dev / 連絡(リンク)</title>
-        <meta charSet='utf-8' />
-        <meta content='merunnoのポートフォリオ * 連絡(リンク)' name='description' />
+        <meta charSet="utf-8" />
+        <meta
+          content="merunnoのポートフォリオ * 連絡(リンク)"
+          name="description"
+        />
 
         {/* OGPタグ */}
         <meta property={'og:url'} content={'https://www.merunno.dev/'} />
         <meta property={'og:title'} content={'merunno のポートフォリオ'} />
-        <meta property={'og:description'} content={'merunnoが作ったポートフォリオです。'} />
+        <meta
+          property={'og:description'}
+          content={'merunnoが作ったポートフォリオです。'}
+        />
       </Head>
 
       <div>
         <div className={'title'}>
-          <Circle w='100%' h='100px'>
+          <Circle w="100%" h="100px">
             <Text
-              bgGradient='linear(to-l, #FFBAFC, #A3D7FF)'
-              bgClip='text'
-              fontSize='3xl'
-              fontWeight='extrabold'
+              bgGradient="linear(to-l, #FFBAFC, #A3D7FF)"
+              bgClip="text"
+              fontSize="3xl"
+              fontWeight="extrabold"
             >
               連絡(リンク)
             </Text>
@@ -35,14 +41,14 @@ export default function Contacts() {
         </div>
 
         <div className={'SNS'}>
-          <Circle w='100%' h='50px'>
+          <Circle w="100%" h="50px">
             <HStack>
               <a
                 href="https://github.com/merunno"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button colorScheme='teal' variant='solid' >
+                <Button colorScheme="teal" variant="solid">
                   GitHub
                 </Button>
               </a>
@@ -51,7 +57,7 @@ export default function Contacts() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button colorScheme='teal' variant='solid' >
+                <Button colorScheme="teal" variant="solid">
                   Twitter
                 </Button>
               </a>
@@ -60,7 +66,7 @@ export default function Contacts() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button colorScheme='teal' variant='solid' >
+                <Button colorScheme="teal" variant="solid">
                   KeyBase
                 </Button>
               </a>
@@ -86,5 +92,5 @@ export default function Contacts() {
         </div>
       </div>
     </Box>
-  )
+  );
 }
