@@ -9,27 +9,46 @@
     "lint": "next lint",
     "test": "jest",
     "typecheck": "tsc --noEmit",
-    "format": "prettier --write \"./src/**/*.{ts,tsx}\""
+    "format": "prettier --write",
+    "eslint": "eslint --ignore-path .gitignore \"src/**/*.{js,ts,tsx}\"",
+    "eslint:fix": "eslint --ignore-path .gitignore \"src/**/*.{js,ts,tsx}\" --fix",
+    "fix": "yarn run format && npm run lint -- --fix",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@chakra-ui/icons": "1.1.1",
-    "@chakra-ui/react": "1.7.3",
-    "@emotion/react": "11.7.0",
-    "@emotion/styled": "11.6.0",
-    "@mui/icons-material": "5.2.4",
-    "framer-motion": "5.3.3",
-    "next": "12.0.7",
+    "@chakra-ui/react": "1.7.4",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "esl": "^10.0.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "framer-motion": "^5.6.0",
+    "next": "12.0.8",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@testing-library/cypress": "8.0.2",
     "@testing-library/react": "12.1.2",
-    "@types/node": "16.11.19",
-    "@types/react": "17.0.38",
+    "@types/node": "16.11.14",
+    "@types/react": "17.0.37",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.7",
     "eslint-config-prettier": "8.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.7",
     "prettier": "2.5.1",
     "typescript": "4.5.4"
   }
