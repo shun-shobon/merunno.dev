@@ -27,6 +27,7 @@ export default function Home() {
         <PageButton /> {/* ボタン */}
 
       <Center h={'200px'}>
+        {/* TODO: ダークテーマの本格実装: https://github.com/merunno/merunno.dev/issues/86 */}
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <RepositoryButton />
       </Center>
