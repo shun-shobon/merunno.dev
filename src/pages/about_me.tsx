@@ -21,7 +21,7 @@ export default function About() {
         </Circle>
       </div>
 
-      {/* TODO: もっといい方法で書き直す。 */}
+      {/* TODO: もっといい方法で書き直す。: https://github.com/merunno/merunno.dev/issues/84 */}
       <div className={introductionCSS.main}>
         <div className={AboutMeCSS.Title}>
           <div className={AboutMeCSS.content}>名前</div>
