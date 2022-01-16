@@ -5,7 +5,7 @@ import React from 'react'
 export function BackButton() {
   return (
     <main>
-      <Button colorScheme='ghost'>
+      <Button colorScheme='teal' variant='ghost'>
         <Link href='/'>
           戻る
         </Link>
