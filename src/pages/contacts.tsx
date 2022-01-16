@@ -6,7 +6,7 @@ import introductionCSS from '../styles/introduction.module.css'
 import AboutMeCSS from '../styles/about_me.module.css'
 import { BackButton } from '../component/backButton.component'
 
-export default function Contects() {
+export default function Contacts() {
   return (
     <Box>
       <Head>

@@ -9,16 +9,12 @@ export default function ButtonC() {
         <Circle w='100%' h='50px'>
           <Link href='/about_me'>
             <Button colorScheme='teal' variant='ghost'>
-              <Link href='/about_me'>
-                About me
-              </Link>
+              About me
             </Button>
           </Link>
-          <Link href='/about_me'>
+          <Link href='/contacts'>
             <Button colorScheme='teal' variant='ghost'>
-              <Link href='/contects'>
-                Contacts
-              </Link>
+              Contacts
             </Button>
           </Link>
           {/* TODO: いつかポートフォリオ内に移植する : https://github.com/merunno/merunno.dev/issues/85 */}
