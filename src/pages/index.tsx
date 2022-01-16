@@ -1,10 +1,11 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Center } from '@chakra-ui/react'
 import React from 'react'
 import Head from 'next/head'
 
 import Introduction from '../component/introduction.component'
 import SelfDescription from '../component/self_description.component'
 import PageButton from '../component/button.component'
+import RepositoryButton from '../component/github_link.component'
 
 export default function Home() {
   return (
@@ -22,6 +23,10 @@ export default function Home() {
         <Introduction/> {/* アイコン */}
         <SelfDescription /> {/* タイトル */}
         <PageButton /> {/* ボタン */}
+
+      <Center h={'200px'}>
+        <RepositoryButton />
+      </Center>
     </Box>
   )
 }
