@@ -5,11 +5,13 @@ import React from 'react'
 export function BackButton() {
   return (
     <main>
-      <Button colorScheme='teal' variant='ghost'>
-        <Link href='/'>
-          戻る
-        </Link>
-      </Button>
+      <Link href='/'>
+        <Button colorScheme='teal' variant='ghost'>
+          <Link href='/'>
+            戻る
+          </Link>
+        </Button>
+      </Link>
     </main>
   )
 }

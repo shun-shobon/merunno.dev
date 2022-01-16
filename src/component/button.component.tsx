@@ -7,16 +7,20 @@ export default function ButtonC() {
     <main>
       <div>
         <Circle w='100%' h='50px'>
-          <Button colorScheme='teal' variant='ghost'>
-            <Link href='/about_me'>
-              About me
-            </Link>
-          </Button>
-          <Button colorScheme='teal' variant='ghost'>
-            <Link href='/contects'>
-              Contacts
-            </Link>
-          </Button>
+          <Link href='/about_me'>
+            <Button colorScheme='teal' variant='ghost'>
+              <Link href='/about_me'>
+                About me
+              </Link>
+            </Button>
+          </Link>
+          <Link href='/about_me'>
+            <Button colorScheme='teal' variant='ghost'>
+              <Link href='/contects'>
+                Contacts
+              </Link>
+            </Button>
+          </Link>
           {/* TODO: いつかポートフォリオ内に移植する : https://github.com/merunno/merunno.dev/issues/85 */}
           <a
             href="https://m92n.notion.site/80be3825bc264434a2799a5bb5586caf?v=2ae5b85320e549a2bae7c4496d53a48b"
