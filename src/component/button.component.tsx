@@ -8,17 +8,17 @@ export default function ButtonC() {
       <div>
         <Circle w='100%' h='50px'>
           <Button colorScheme='teal' variant='ghost'>
-            <Link href='https://twitter.com/2I92me_1'>
+            <Link href='/about_me'>
               About me
             </Link>
           </Button>
           <Button colorScheme='teal' variant='ghost'>
-            <Link href='https://twitter.com/2I92me_1'>
+            <Link href='/projects'>
               Projects
             </Link>
           </Button>
           <Button colorScheme='teal' variant='ghost'>
-            <Link href='https://twitter.com/2I92me_1'>
+            <Link href='/contacts'>
               Contacts
             </Link>
           </Button>
