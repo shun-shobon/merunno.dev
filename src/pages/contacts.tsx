@@ -1,4 +1,5 @@
-import { Box, Button, Circle, HStack, Text } from '@chakra-ui/react';
+import { Box, Button, Circle, HStack, Stack, Text } from '@chakra-ui/react';
+import { MdOutlineTungsten } from 'react-icons/md';
 import React from 'react';
 import Head from 'next/head';
 
@@ -71,6 +72,35 @@ export default function Contacts() {
                 </Button>
               </a>
             </HStack>
+          </Circle>
+        </div>
+
+        <div className={'pgp'}>
+          <Circle w={'100%'} h={'150px'}>
+            <div className={introductionCSS.main}>
+              <div className={AboutMeCSS.Title}>
+                <div className={AboutMeCSS.content}>かわいいGPG鍵</div>
+                <p>KeyBase・GitHub Profileで公開</p>
+
+                {/* 公開鍵ファイルのダウンロード */}
+                <Circle w="100%" h="50px">
+                  <a
+                    href="../../public/pgp/merunno.asc"
+                    download={'merunno.asc'}
+                  >
+                    <Stack direction={'row'} spacing={4}>
+                      <Button
+                        leftIcon={<MdOutlineTungsten />}
+                        colorScheme={'pink'}
+                        variant={'outline'}
+                      >
+                        merunno.pub
+                      </Button>
+                    </Stack>
+                  </a>
+                </Circle>
+              </div>
+            </div>
           </Circle>
         </div>
 
