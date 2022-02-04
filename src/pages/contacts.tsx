@@ -1,5 +1,4 @@
 import { Box, Button, Circle, HStack, Stack, Text } from '@chakra-ui/react';
-import { MdOutlineTungsten } from 'react-icons/md';
 import React from 'react';
 import Head from 'next/head';
 
@@ -89,11 +88,7 @@ export default function Contacts() {
                     download={'merunno.asc'}
                   >
                     <Stack direction={'row'} spacing={4}>
-                      <Button
-                        leftIcon={<MdOutlineTungsten />}
-                        colorScheme={'pink'}
-                        variant={'outline'}
-                      >
+                      <Button colorScheme={'pink'} variant={'outline'}>
                         merunno.pub
                       </Button>
                     </Stack>
