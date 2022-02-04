@@ -51,12 +51,17 @@ export default function About() {
           <p>2005/09/02</p>
         </div>
         <div className={AboutMeCSS.Title}>
-          <div className={AboutMeCSS.content}>勉強中の言語</div>
+          <div className={AboutMeCSS.content}>メイン言語</div>
           <p>TypeScript / Java</p>
+        </div>
+        <div className={AboutMeCSS.Title}>
+          <div className={AboutMeCSS.content}>勉強中</div>
+          <p>Rust / Docker</p>
         </div>
         <div className={AboutMeCSS.Title}>
           <div className={AboutMeCSS.content}>その他</div>
           <p>JetBrains IDE. GitHub, Git, Markdownなど</p>
+          <p>I Love ❤ JetBrains IDE (I still can't get it to work: ....)</p>
         </div>
       </div>
 
